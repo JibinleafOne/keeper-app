@@ -9,7 +9,7 @@ const Note = (props) => {
   return (
 
     <div className="note">
-      <h3>{props.title}</h3>
+      <h2>{props.title}</h2>
       <p>{props.content}</p>
       <button onClick={handleClick}>Delete</button>
     </div>

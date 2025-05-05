@@ -12,20 +12,27 @@ html {
 }
 
 body {
-  body {
-    @apply bg-gray-200 px-4;
-  }
-  
+  @apply bg-gray-200 px-4 w-full overflow-x-clip;
 }
-
 
 /* Header */
 .header {
-  @apply bg-yellow-400 -mx-4 py-4 px-8 shadow-md;
+  @apply bg-yellow-400 py-4 px-8 shadow-md relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  right: -1rem;
+  top: 0;
+  bottom: 0;
+  background-color: inherit;
+  z-index: -1;
 }
 
 .header h1 {
-  @apply text-white font-light font-sans text-3xl; /* Increased size to 3xl */
+  @apply text-white font-light font-sans text-3xl;
 }
 
 /* Footer */
@@ -42,16 +49,14 @@ body {
   @apply bg-white rounded-md shadow-md p-2 w-60 m-4 float-left;
 }
 
-.note h1 {
-  @apply text-base mb-1;
+.note h2 {
+  @apply text-base mb-1 font-bold;
 }
-
 /* Inputs and Textarea */
 input[type="text"],
 textarea {
   @apply mt-4 block mx-auto max-w-[500px] w-full p-3 mb-3 border border-gray-300 rounded-lg text-base transition-colors duration-300 ease-in-out;
 }
-
 
 input[type="text"]:focus,
 textarea:focus {
