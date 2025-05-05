@@ -13,12 +13,16 @@ const CreateArea = (props) => {
   };
 
   const submitNote = (event) => {
+    event.preventDefault();
+    if (!note.title.trim() || !note.content.trim()) {
+      alert("Please fill in both title and content!");
+      return;
+    }
     props.onAdd(note);
     setNote({
       title: "",
       content: ""
     });
-    event.preventDefault();
   };
 
   return (
