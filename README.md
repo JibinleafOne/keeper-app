@@ -8,6 +8,10 @@ The Keeper App is a note-taking web application where users can create, edit, an
 - Clean and modern UI using Tailwind CSS.
 - Fully responsive and accessible across all devices.
 
+## Features / Updates
+- Removed horizontal scroll issue for cleaner layout.
+- Users can now only add notes when both the title and content fields are filled.
+
 ## Tech Stack
 - **Frontend**: React, Tailwind CSS
 - **Deployment**: Vercel, Netlify
@@ -47,5 +51,6 @@ To run the app locally:
 
 ## GitHub Repository
 - **GitHub**: [https://github.com/JibinleafOne/keeper-app](https://github.com/JibinleafOne/keeper-app)
+
 
 
