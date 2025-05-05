@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+* {
+  @apply p-0 m-0 box-border;
+}
+
+html {
+  @apply font-sans;
+}
+
+body {
+  @apply bg-gray-200 px-4;
+}
+
+/* Header */
+.header {
+  @apply bg-yellow-400 -mx-4 py-4 px-8 shadow-md;
+}
+
+.header h1 {
+  @apply text-white font-light font-sans text-3xl; /* Increased size to 3xl */
+}
+
+/* Footer */
+.footer {
+  @apply absolute text-center bottom-0 w-full h-10;
+}
+
+.footer p {
+  @apply text-gray-400;
+}
+
+/* Note */
+.note {
+  @apply bg-white rounded-md shadow-md p-2 w-60 m-4 float-left;
+}
+
+.note h1 {
+  @apply text-base mb-1;
+}
+
+/* Inputs and Textarea */
+input[type="text"],
+textarea {
+  @apply mt-4 block mx-auto max-w-[500px] w-full p-3 mb-3 border border-gray-300 rounded-lg text-base transition-colors duration-300 ease-in-out;
+}
+
+
+input[type="text"]:focus,
+textarea:focus {
+  @apply border-yellow-400 outline-none;
+}
+
+/* Add Button */
+.addButton {
+  @apply mt-4 block mx-auto max-w-[500px] w-full bg-yellow-400 text-white py-3 px-5 rounded-lg text-base cursor-pointer transition-colors duration-300 ease-in-out;
+}
+
+.addButton:hover {
+  @apply bg-yellow-500;
+}
+
+/* Generic Button (used in Note) */
+button {
+  @apply bg-yellow-400 text-white py-1 px-5 rounded-lg text-base cursor-pointer transition-colors duration-300 ease-in-out;
+}
+
+button:hover {
+  @apply bg-yellow-500;
+}
