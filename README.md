@@ -1,75 +1,51 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Keeper App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+The Keeper App is a note-taking web application where users can create, edit, and delete notes. This project was developed using React, styled with Tailwind CSS, and deployed using both Vercel and Netlify.
 
-## Available Scripts
+## Features
+- Create, update, and delete notes.
+- Clean and modern UI using Tailwind CSS.
+- Fully responsive and accessible across all devices.
 
-In the project directory, you can run:
+## Tech Stack
+- **Frontend**: React, Tailwind CSS
+- **Deployment**: Vercel, Netlify
 
-### `npm start`
+## Challenges Faced
+- Integrating Tailwind CSS with React was tricky initially due to class name conflict issues.
+- Implementing note deletion logic required handling dynamic state updates in React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How I Resolved Challenges
+- For Tailwind CSS, I configured PostCSS and made sure to use `@apply` correctly to avoid class name conflicts.
+- For note deletion, I used React’s `useState` hook to manage dynamic lists and ensured the correct note was deleted based on its index.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment Links
+- **Vercel**: [Vercel Deployment Link](https://keeper-app-three-sigma.vercel.app/)
+- **Netlify**: [Netlify Deployment Link](https://6818c99d03b058c0f5098613--keeper-app-assignment10.netlify.app/)
 
-### `npm test`
+## Run Locally
+To run the app locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/JibinleafOne/keeper-app.git
+    cd keeper-app
+    ```
 
-### `npm run build`
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## GitHub Repository
+- **GitHub**: [https://github.com/JibinleafOne/keeper-app](https://github.com/JibinleafOne/keeper-app)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# keeper-app
-Tudedude assignment number 10 
->>>>>>> 380df8b00bf3b2775ef8d0920e4a636925d5e04d
